@@ -20,10 +20,10 @@ let handprops = ['letter', 'candle', 'cup', 'pen', 'knife', 'phone', 'watch'];
 let myprop = 'phone';
 
 function findprop(x, y) {
-  return y.indexOf(x);
+  return x.indexOf(y);
 };
 
-console.log(findprop(myprop, handprops));
+console.log(findprop(handprops, myprop));
 // returns 5
 
 
