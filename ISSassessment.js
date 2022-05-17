@@ -16,10 +16,14 @@ Software Developer Candidate Assessment
 // Q: Write a function that takes 2 arguments, first one is an array, second one is a string. loop through the array and find a matching result of the second argument. return the matched index of the array, if there is any
 
 // A:
-let animals = ['Dog', 'Cat', 'Lion', 'Tiger', 'Elephant', 'Turtle', 'Bear'];
-let find = 'Turtle';
+let handprops = ['letter', 'candle', 'cup', 'pen', 'knife', 'phone', 'watch'];
+let myprop = 'phone';
 
-console.log(animals.indexOf(find));
+function findprop(x, y) {
+  return y.indexOf(x);
+};
+
+console.log(findprop(myprop, handprops));
 // returns 5
 
 
