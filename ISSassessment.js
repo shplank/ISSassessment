@@ -19,9 +19,13 @@ Software Developer Candidate Assessment
 let handprops = ['letter', 'candle', 'cup', 'pen', 'knife', 'phone', 'watch'];
 let myprop = 'phone';
 
-function findprop(x, y) {
-  return x.indexOf(y);
-};
+function findprop(array, string) {
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === string) {
+            return i;
+        }
+    }
+}
 
 console.log(findprop(handprops, myprop));
 // returns 5
